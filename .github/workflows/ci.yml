@@ -31,6 +31,9 @@ jobs:
           node-version: 20
           cache: 'npm'
 
+      - name: Setup protoc
+        uses: adruino/setup-protoc@v3.0.0
+
       - run: npm ci
 
       # Prepend any command with "nx record --" to record its logs to Nx Cloud
