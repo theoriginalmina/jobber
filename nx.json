@@ -14,7 +14,7 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "6998064bc855d02a7d07a1bc",
+  "nxCloudId": "699cdd41d198225e36c6d7fa",
   "plugins": [
     {
       "plugin": "@nx/webpack/plugin",
@@ -27,17 +27,10 @@
         "serveStaticTargetName": "serve-static"
       }
     },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
     {
       "plugin": "@nx/jest/plugin",
-      "options": {
-        "targetName": "test"
-      },
+      "options": { "targetName": "test" },
       "exclude": ["apps/jobber-auth-e2e/**/*", "apps/jobber-jobs-e2e/**/*"]
     }
   ],
@@ -49,13 +42,7 @@
         "{workspaceRoot}/proto/*"
       ],
       "options": {
-        "assets": [
-          {
-            "glob": "*.proto",
-            "input": "proto",
-            "output": "proto"
-          }
-        ]
+        "assets": [{ "glob": "*.proto", "input": "proto", "output": "proto" }]
       }
     }
   }
